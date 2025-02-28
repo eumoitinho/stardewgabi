@@ -173,6 +173,11 @@ Many thanks to my front-end professor, Ivin Rodrigues (https://www.twitch.tv/ivi
                             </li>
 
                             <li class="icon">
+                                <img src="img/t2.png">
+                                <h1>alegria.txt</h1>
+                            </li>
+
+                            <li class="icon">
                                 <img src="img/t1.png">
                                 <h1>bad-vibes.mp3</h1>
                             </li>
@@ -254,17 +259,33 @@ Many thanks to my front-end professor, Ivin Rodrigues (https://www.twitch.tv/ivi
                     <img src="img/files.png" onclick="windowHandler('computer')">
                     <h1>documents</h1>
                 </li>
-                <!-- <li class="icon">-->
-                <!--    <img src="img/star.png">-->
-                <!--    <h1>settings</h1>-->
-                <!--</li> -->
                 <li class="icon">
                     <img src="img/trash.png" onclick="windowHandler('trash')">
                     <h1>trash</h1>
                 </li>
             </ul>
         </section>
+        <section class="window hidded" id="textViewer">
+            <header class="window-header" id="textViewerHeader">
+                <section class="buttons">
+                    <span class="minimize" onclick="maximizeHandler('textViewer')">
+                        <img src="img/maximize.png" alt="">
+                    </span>
+                    <span class="close" onclick="windowHandler('textViewer')">
+                        <img src="img/close.png" alt="">
+                    </span>
+                </section>
+                <span class="window-name">File Viewer</span>
+            </header>
+            <section class="window-content text-content">
+                <pre id="fileContent"></pre>
+            </section>
+        </section>
+        
     </main>
+
+    
+    
 
     <footer>
 
