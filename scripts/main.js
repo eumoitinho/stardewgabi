@@ -102,22 +102,22 @@ function openTextViewer(fileName) {
     let fileContent = '';
     const fileData = {
         'distância.txt': 'Há duas semanas, nos encontramos por acaso no anon chat, e desde então, nossas conversas têm sido contínuas e cheias de drama kkkjk.\nNão fosse a distância: CWB x PV, 540 km, parece que o mapa do Brasil inteiro está entre a gente, como se fossemos o Pequeno Príncipe e a Rosa, divididos por planetas e galáxias. Mas, como ele aprendeu, “o essencial é invisível aos olhos; só se vê bem com o coração”. \nTalvez a distância física não seja tão importante quanto as palha assadas que a gente fala e as risadas exageradas por chat que compartilhamos, mesmo estando tão longe. Vou encontrar jeitos de superar isso, seja com mensagens ou planos futuros para encurtar esse caminho.\nA distância é uma coisa estranha. Às vezes, parece que não faz diferença nenhuma, outras vezes, incomoda pra caramba. A gente se fala todo dia, manda mensagem, dá risada, mas tem momentos em que dá vontade de simplesmente estar perto. Não precisar calcular horários (não que a gente precise kkk), não depender de uma tela. \n\n\n Continua...',
-        'tistreza.txt': 'Ainda não ta liberado fofinha, se liga.',
+        'tistreza.txt': 'Sabe, às vezes bate uma tristezinha leve quando penso que não posso simplesmente aparecer aí pra te buscar do trabalho, sair no final de semana com você, ou só ficar junto sem fazer nada. É um sentimento passageiro, como as nuvens, elas vêm, mas logo passam, deixando o céu mais claro. Não é uma tristeza pesada, mas sim aquela saudade de algo que ainda está começando, como nossa amizade, e o meu amor.\n Ainda assim, penso que, mesmo separados, podemos manter essa conexão viva com nossas conversas e histórias, mesmo que nada do que eu pensei pra nos romanticamente aconteça.\nAnda assim, a tristeza permanece. Não daquela que sufoca, mas daquela que sussurra baixinho, lembrando que uma alma tão parecida com a minha está longe. E indecisa como eu.\n\nÉ estranho sentir essa conexão e, ao mesmo tempo, essa distância.Saber que nossas mentes poderiam se perder juntas em conversas intermináveis, que poderíamos rir das mesmas bobagens, compartilhar silêncios confortáveis… e, no entanto, estamos aqui, separados por caminhos que ainda não sabemos onde vão dar.\nMas talvez seja isso que torna tudo tão intenso.Essa mistura de saudade e incerteza, de desejo e cautela.Porque, no fundo, mesmo sem saber o que o futuro guarda, há algo em mim que não quer soltar essa conexão.Algo que diz que, de alguma forma, a gente ainda tem muito pra viver, nem que seja nas entrelinhas das nossas palavras.\n\n\n\nContinua ainda boboca..',
         'alegria.txt': 'Se o outro não tava liberado esse tb n tá né gata.',
         // Adicione outros arquivos, se necessário.
     };
 
-    fileContent = fileData[fileName] || 'Não foi possível carregar o conteúdo deste arquivo.';
-    document.getElementById('fileContent').textContent = fileContent;
+fileContent = fileData[fileName] || 'Não foi possível carregar o conteúdo deste arquivo.';
+document.getElementById('fileContent').textContent = fileContent;
 
-    // Abre a janela textViewer
-    const textViewer = document.getElementById('textViewer');
-    textViewer.classList.remove('hidded');
-    textViewer.classList.add('opened');
-    textViewer.style.display = 'block';
+// Abre a janela textViewer
+const textViewer = document.getElementById('textViewer');
+textViewer.classList.remove('hidded');
+textViewer.classList.add('opened');
+textViewer.style.display = 'block';
 
-    // Ativa o recurso de arrastar na janela
-    dragElement('textViewer', 'textViewerHeader');
+// Ativa o recurso de arrastar na janela
+dragElement('textViewer', 'textViewerHeader');
 }
 
 
